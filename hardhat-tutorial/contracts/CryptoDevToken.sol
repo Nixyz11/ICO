@@ -92,7 +92,7 @@
         (bool sent, ) = _owner.call{value: amount}("");
         require(sent, "Failed to send Ether");
       }
-
+ 
       // Function to receive Ether. msg.data must be empty
       receive() external payable {}
 
